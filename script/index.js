@@ -1,7 +1,7 @@
 "use strict"
 
 let cityStates = [
-    
+
     {
         state: "Alabama",
         stateAbbr: "AL",
