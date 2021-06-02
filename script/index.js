@@ -1,25 +1,208 @@
 "use strict"
 
-let cityStates = [{
+let cityStates = [
+    
+    {
+        state: "Alabama",
+        stateAbbr: "AL",
+        cities: ["Birmingham", "Huntsville", "Montgomery"]
+    }, {
+        state: "Alaska",
+        stateAbbr: "AK",
+        cities: ["Anchorage", "Juneau", "Fairbanks", "Badger"]
+    }, {
+        state: "Arizona",
+        stateAbbr: "AZ",
+        cities: ["Phoenix", "Tucson", "Mesa", "Chandler"]
+    }, {
+        state: "Arkansas",
+        stateAbbr: "AR",
+        cities: ["Little Rock", "Fort Smith", "Fayetteville", "Springdale"]
+    }, {
         state: "California",
         stateAbbr: "CA",
         cities: ["Los Angeles", "San Francisco", "San Diego"]
-    },
-    {
+    }, {
         state: "Colorado",
         stateAbbr: "CO",
         cities: ["Aspen", "Boulder", "Denver", "Pagosa Springs"]
-    },
-    {
-        state: "Texas",
-        stateAbbr: "TX",
-        cities: ["Austin", "Dallas", "Houston", "San Antonio"]
-    },
-    {
+    }, {
+        state: "Connecticut",
+        stateAbbr: "CT",
+        cities: ["Bridgeport", "New Haven", "Stamford", "Hartford"]
+    }, {
+        state: "Delaware",
+        stateAbbr: "DE",
+        cities: ["Wilmington", "Dover", "Newark", "Middletown"]
+    }, {
+        state: "Florida",
+        stateAbbr: "FL",
+        cities: ["Jacksonville", "Miami", "Tampa", "Orlando"]
+    }, {
+        state: "Georgia",
+        stateAbbr: "GA",
+        cities: ["Atlanta", "Augusta", "Columbus", "Macon"]
+    }, {
+        state: "Hawaii",
+        stateAbbr: "HI",
+        cities: ["Honolulu", "Pearl City", "Hilo", "Waipahu"]
+    }, {
+        state: "Idaho",
+        stateAbbr: "ID",
+        cities: ["Boise City", "Meridian", "Nampa", "Idaho Falls"]
+    }, {
+        state: "Illinois",
+        stateAbbr: "IL",
+        cities: ["Chicago", "Aurora", "Joliet"]
+    }, {
+        state: "Indiana",
+        stateAbbr: "IN",
+        cities: ["Indianapolis", "Fort Wayne", "Evansville", "South Bend"]
+    }, {
+        state: "Iowa",
+        stateAbbr: "IA",
+        cities: ["Des Moines", "Cadar Rapids", "Davenport", "Sioux City"]
+    }, {
+        state: "Kansas",
+        stateAbbr: "KS",
+        cities: ["Wichita", "Overland Park", "Kansas City", "Olathe"]
+    }, {
+        state: "Kentucky",
+        stateAbbr: "KY",
+        cities: ["Louisville", "Lexington-Fayette", "Bowling Green"]
+    }, {
+        state: "Louisiana",
+        stateAbbr: "LA",
+        cities: ["New Orleans", "Baton Rouge", "Shreveport", "Metairie"]
+    }, {
+        state: "Maine",
+        stateAbbr: "ME",
+        cities: ["Portland", "Lewiston", "Bangor", "Auburn"]
+    }, {
+        state: "Maryland",
+        stateAbbr: "MD",
+        cities: ["Baltimore", "Columbia", "Germantown", "Silver Spring"]
+    }, {
+        state: "Massachusetts",
+        stateAbbr: "MA",
+        cities: ["Boston", "Worcester", "Springfield"]
+    }, {
+        state: "Michigan",
+        stateAbbr: "MI",
+        cities: ["Detroit", "Grand Rapids", "Warren City", "Sterling Heights"]
+    }, {
+        state: "Minnesota",
+        stateAbbr: "MN",
+        cities: ["Minneapolis", "St. Paul", "Rochester", "Duluth"]
+    }, {
+        state: "Mississippi",
+        stateAbbr: "MS",
+        cities: ["Jackson", "Gulfport", "Southaven", "Hattiesburg"]
+    }, {
+        state: "Missouri",
+        stateAbbr: "MO",
+        cities: ["Kansas City", "St. Louis", "Springfield"]
+    }, {
+        state: "Montana",
+        stateAbbr: "MT",
+        cities: ["Billings", "Missoula", "Great Falls", "Bozeman"]
+    }, {
+        state: "Nebraska",
+        stateAbbr: "NE",
+        cities: ["Omaha", "Lincoln", "Bellevue", "Grand Island"]
+    }, {
+        state: "Nevada",
+        stateAbbr: "NV",
+        cities: ["Las Vegas", "Henderson", "Reno", "Paradise"]
+    }, {
+        state: "New Hampshire",
+        stateAbbr: "NH",
+        cities: ["Manchester", "Nashua", "Concord"]
+    }, {
+        state: "New Jersey",
+        stateAbbr: "NJ",
+        cities: ["Newark", "Jersey City", "Paterson", "Elizabeth"]
+    }, {
+        state: "New Mexico",
+        stateAbbr: "NM",
+        cities: ["Albuquerque", "Rio Rancho", "Santa Fe", "Roswell"]
+    }, {
         state: "New York",
         stateAbbr: "NY",
         cities: ["New York City", "Albany", "Buffalo", "Schenectady"]
-    }
+    }, {
+        state: "North Carolina",
+        stateAbbr: "NC",
+        cities: ["Charlotte", "Raleigh", "Greensboro", "Durham"]
+    }, {
+        state: "North Dakota",
+        stateAbbr: "ND",
+        cities: ["Fargo", "Bismarck", "Grand Forks", "Minot"]
+    }, {
+        state: "Ohio",
+        stateAbbr: "OH",
+        cities: ["Colombus", "Cleveland", "Cincinnati", "Toledo"]
+    }, {
+        state: "Oklahoma",
+        stateAbbr: "OK",
+        cities: ["Oklahoma City", "Tulsa", "Norman", "Broken Arrow"]
+    }, {
+        state: "Oregon",
+        stateAbbr: "OR",
+        cities: ["Portland", "Salem", "Eugene", "Gresham"]
+    }, {
+        state: "Pennsylvania",
+        stateAbbr: "PA",
+        cities: ["Philadelphia", "Pittsburgh", "Allentown", "Erie"]
+    }, {
+        state: "Rhode Island",
+        stateAbbr: "RI",
+        cities: ["Providence", "Cranston", "Warwick", "Pawtucket"]
+    }, {
+        state: "South Carolina",
+        stateAbbr: "SC",
+        cities: ["Charleston", "Columbia", "North Charleston", "Mount Pleasant"]
+    }, {
+        state: "South Dakota",
+        stateAbbr: "SD",
+        cities: ["Sioux Falls", "Rapid City", "Aberdeen"]
+    }, {
+        state: "Tennessee",
+        stateAbbr: "TN",
+        cities: ["Nashville", "Memphis", "Knoxville", "Chattanooga"]
+    }, {
+        state: "Texas",
+        stateAbbr: "TX",
+        cities: ["Houston", "San Antonio", "Dallas", "Austin"]
+    }, {
+        state: "Utah",
+        stateAbbr: "UT",
+        cities: ["Salt Lake City", "West Valley City", "Provo", "West Jordan"]
+    }, {
+        state: "Vermont",
+        stateAbbr: "VT",
+        cities: ["Burlington", "Essex", "Colchester"]
+    }, {
+        state: "Virginia",
+        stateAbbr: "VA",
+        cities: ["Virginia Beach", "Norfolk", "Chesapeake", "Arlington"]
+    }, {
+        state: "Washington",
+        stateAbbr: "WA",
+        cities: ["Seattle", "Spokane", "Tacoma", "Vancouver"]
+    }, {
+        state: "West Virginia",
+        stateAbbr: "WV",
+        cities: ["Charleston", "Huntington", "Morgantown", "Parkersburg"]
+    }, {
+        state: "Wisconsin",
+        stateAbbr: "WI",
+        cities: ["Milwaukee", "Madison", "Green Bay", "Kenosha"]
+    }, {
+        state: "Wyoming",
+        stateAbbr: "WY",
+        cities: ["Cheyenne", "Casper", "Gillette", "Laramie"]
+    },
 ];
 
 window.onload = function () {
